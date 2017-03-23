@@ -8,7 +8,7 @@ var path = require('path')
 var hash = require('hash-sum')
 
 module.exports = function () {}
-
+console.log("vue-style-loader");
 module.exports.pitch = function (remainingRequest) {
   if (this.cacheable) this.cacheable()
 
