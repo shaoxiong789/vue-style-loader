@@ -29,7 +29,7 @@ module.exports.pitch = function (remainingRequest) {
     "if(typeof content === 'string') content = [[module.id, content, '']];",
     'if(content.locals) module.exports = content.locals;'
   ]
-
+  console.log("isServer",isServer);
   if (!isServer) {
     // on the client: dynamic inject + hot-reload
     return shared.concat([
